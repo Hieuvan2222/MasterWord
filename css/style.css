@@ -13,8 +13,9 @@ body {
 .mei-section {
     padding: 100px 0;
 }
+
 /* HEADER  */
-header{
+header {
     background-color: #fff;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.05);
     display: flex;
@@ -22,37 +23,43 @@ header{
     padding: 20px 0;
 
 }
+
 header .navbar-brand {
-    color: #dc4f72 ;
+    color: #dc4f72;
     font-size: 26px;
     font-weight: 700;
     letter-spacing: -1px;
 }
-#portNavbar .nav-item .nav-link{
+
+#portNavbar .nav-item .nav-link {
     color: #2c3038;
     font-size: 16px;
     font-weight: 400;
     padding: 10px 15px;
     transition: all .5s;
 }
-header button i{
+
+header button i {
     border-radius: 6px;
     padding: 10px;
-    background-color:#dc4f72;
-    color:white;
+    background-color: #dc4f72;
+    color: white;
 }
+
 #portNavbar .nav-link:hover {
     color: #dc4f72;
 }
-#portNavbar .active .nav-link{
+
+#portNavbar .active .nav-link {
     color: #dc4f72;
 }
-#portNavbar .nav-item .nav-link i{
- font-size: 10px;
- color: #2c3038;
+
+#portNavbar .nav-item .nav-link i {
+    font-size: 10px;
+    color: #2c3038;
 }
 
-#portNavbar .nav-item .nav-link::after{
+#portNavbar .nav-item .nav-link::after {
     content: "";
     width: 0;
     height: 2px;
@@ -60,28 +67,31 @@ header button i{
     display: block;
     transition: all .5s;
 }
-#portNavbar .nav-item .nav-link:hover::after{
-width: 40%;
+
+#portNavbar .nav-item .nav-link:hover::after {
+    width: 40%;
 }
-header .header__search{
+
+header .header__search {
     border: none;
     background-color: white;
     margin-top: 15px;
 }
-header .header__search i{
+
+header .header__search i {
     color: #5a5a5a;
     width: 40px;
     height: 40px;
     line-height: 20px;
     border-radius: 50%;
     background-color: #f7f9fc;
-    border:1px solid #eee;
+    border: 1px solid #eee;
     text-align: center;
     margin-right: 15px;
 }
 
-header .modal input{
-    padding: 15px 20px 12px ;
+header .modal input {
+    padding: 15px 20px 12px;
     width: 100%;
     height: 55px;
     font-size: 16px;
@@ -92,21 +102,23 @@ header .modal input{
     border-bottom-left-radius: 6px;
     border-top-left-radius: 6px;
     outline: none;
-    
+
 }
-header .modal form button{
-    
+
+header .modal form button {
+
     font-size: 17px;
     padding: 0 25px;
     text-align: center;
     color: #F5F9FC;
     font-weight: 500;
     border: none;
-    background-color:#dc4f72;
-    border-top-right-radius:6px ;
-    border-bottom-right-radius:6px ; 
+    background-color: #dc4f72;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
 }
-header .modal .modal-content>button{
+
+header .modal .modal-content>button {
     position: absolute;
     right: 20px;
     top: -50px;
@@ -114,7 +126,8 @@ header .modal .modal-content>button{
     color: #fff;
     opacity: 0.7;
 }
-header .header__button{
+
+header .header__button {
     font-size: 14px;
     font-weight: 700;
     padding: 0 35px;
@@ -125,3 +138,58 @@ header .header__button{
 
 
 
+
+/* CAROUSEL */
+
+
+.maCarousel-index .content {
+    
+    background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)),
+        url(../img/IMgmaster01.jpg);
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    padding-top: 5rem;
+}
+.maCarousel-index .content-left h3 {
+    font-size: 50px;
+    line-height: 57.5px;
+    color: var(--title-color);
+    font-weight: 700; }
+.maCarousel-index .content-left p {
+    color: var(--text-color);
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 400;
+    max-width: 450px; }
+
+    .maCarousel .maCarousel__button {
+        font-size: 14px;
+        font-weight: 700;
+        padding: 0 35px;
+        line-height: 52px;
+    }
+
+
+  @media (max-width: 992px) {
+.maCarousel-index .content-photo img {
+      display: block; } }
+  @media (max-width: 568px) {
+.maCarousel-index .content-left h3 {
+      font-size: 40px;
+      line-height: 45px; } }
+  @media (max-width: 375px) {
+.maCarousel-index .content-left h3 {
+      font-size: 35px; } }
+
+@media (max-width: 992px) {
+.maCarousel-index {
+    margin-top: 70px; } }
