@@ -13,6 +13,7 @@ body {
 .mei-section {
     padding: 100px 0;
 }
+
 /* HEADER  */
 header{
     background-color: #fff;
@@ -120,6 +121,71 @@ header .header__button{
     padding: 0 35px;
     line-height: 52px;
 }
+
+
+/* STARTUP  */
+.startup .startup__title{
+    width: 65%;
+    margin: 0 auto;
+    margin-bottom: 60px;
+}
+.startup .startup__title span{
+    color: #dc4f72;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+.startup .startup__title h2{
+    font-size: 46px;
+    line-height: 1;
+    font-weight: 700;
+    color: #2c3038;
+}
+.startup .startup__title p{
+    font-size: 16px;
+    line-height: 22.5px;
+    color: #5a5a5a;
+    font-weight: 400;
+    margin: 15px 0;
+}
+
+.start__item{
+    background-color: #f7f9fc;
+    padding: 40px 25px;
+    border: 1px solid #f7f9fc;
+    border-radius: 6px;
+    transition: all .5s;
+}
+
+.start__item:hover{
+    transform: translateY(-20px);
+    box-shadow: 0 0 60px 0 rgba(0, 0, 0, 0.1);
+
+}
+
+
+.startup__content  .start__item h3{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 35px;
+    color: #2c3038;
+    margin: 15px 0;
+    color: #2c3038;
+}
+.startup__content  .start__item p{
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 24.5px;
+    
+
+}
+
+
+
+
+
+
 
 
 
