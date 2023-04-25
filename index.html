@@ -73,6 +73,7 @@
             <button class="header__dark" id="switchButton" title="Click to switch theme">
                 <i class="far fa-moon"></i>
                 <i class="far fa-sun"></i>
+              
             </button>
         </nav>
 
@@ -97,13 +98,12 @@
           <style>
               .contentCarousel {
 
-                  background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.92)),
+                  background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
                       url(img/IMgmaster01.jpg);
                   position: relative;
                   z-index: 1;
                   overflow: hidden;
-                  background-repeat: no-repeat,
-                      no-repeat,
+                  background-repeat: 
                       no-repeat;
                   background-position: center;
                   background-attachment: fixed;
@@ -112,6 +112,24 @@
                   align-items: center;
                   padding-top: 5rem;
               }
+              .dark .contentCarousel{
+                background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
+                 url(img/IMgmaster01.jpg);
+                  position: relative;
+                  z-index: 1;
+                  overflow: hidden;
+                  background-repeat:
+                      no-repeat;
+                  background-position: center;
+                  background-attachment: fixed;
+                  background-size: cover;
+                  display: grid;
+                  align-items: center;
+                  padding-top: 5rem;
+
+}
+
+
           </style>
           <div class="container HomePageCarousel">
               <div class="row align-items-center">
@@ -238,7 +256,7 @@
                             Happy Customers </h4>
                         <p class="counter">
                             10458 </p>
-                        <p>
+                        <p class="stats__text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed. </p>
                     </div>
                 </div>
@@ -249,7 +267,7 @@
                             Winning Awards </h4>
                         <p class="counter">
                             890 </p>
-                        <p>
+                        <p class="stats__text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed. </p>
                     </div>
                 </div>
@@ -260,7 +278,7 @@
                             Completed Projects </h4>
                         <p class="counter">
                             5345 </p>
-                        <p>
+                        <p class="stats__text">
                             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere atque sed. </p>
                     </div>
                 </div>
@@ -615,13 +633,21 @@
           <style>
               .clients__content {
 
-                  background: linear-gradient(to right, var(--bg-color), rgba(255, 255, 255, 0.77)),
+                  background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
                       url(img/IMgmaster12.jpg);
                   background-size: cover;
-                  background-repeat: no-repeat, no-repeat, no-repeat;
+                  background-repeat: no-repeat;
                   background-position: center;
                   background-attachment: fixed;
               }
+              .dark .clients__content {
+                background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)),
+                url(img/IMgmaster12.jpg);
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-position: center;
+                background-attachment: fixed;
+            }
           </style>
           <div class="container py-lg-3 HomePageClients">
               <div class="heading__section text-center mx-auto">
@@ -911,10 +937,6 @@ integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9
 crossorigin="anonymous"></script>
 
 
-
-
-
-<script src="./js/theme-change.js"></script><!-- theme switch js (light and dark)-->
 
 
 
