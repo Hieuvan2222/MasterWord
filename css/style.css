@@ -18,14 +18,17 @@ body {
 
 /* HEADER  */
 header{
-    background-color: #fff;
     box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+    background-color: white;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
 
+}
+.dark header{
+    background-color: black;
 }
 
 header .navbar-brand {
@@ -41,6 +44,7 @@ header .navbar-brand {
     padding: 10px 15px;
     transition: all .5s;
 }
+.dark #portNavbar .nav-item .nav-link{color: #b7b7b7;}
  .navbar-toggler i{
     border-radius: 6px;
     padding: 10px;
@@ -69,6 +73,7 @@ header .navbar-brand {
 }
 #portNavbar .nav-item .nav-link:hover::after{
 width: 40%;
+
 }
 header .header__search{
     border: none;
@@ -85,6 +90,10 @@ header .header__search i{
     border:1px solid #eee;
     text-align: center;
     margin-right: 15px;
+    transition: all .5s;
+}
+header .header__search:hover i{
+    color: black;
 }
 header .modal input{
     padding: 15px 20px 12px ;
@@ -144,6 +153,14 @@ header .header__button:hover{
     border: none;
 }
 
+header .header__dark{
+    width: 24px;
+    height: 24px;
+    padding: 0px 0;
+    border: none;
+    margin-left:  5px;
+}
+
 
 
 #myBody {
@@ -167,24 +184,43 @@ header .header__button:hover{
   /* Dark Theme*/
   .dark#myBody {
     background-color: black;
+
+    
   }
    .dark #switchButton {
-    border: 1px solid white;
+    background-color: black ;
 
   }
    .dark #switchButton .fa-sun {
     display: block;
+    color: #b7b7b7;
     
   }
    .dark #switchButton .fa-moon {
     display: none;
+    color: #b7b7b7;
   }
-  .dark .card{
+  .dark .card__item{
     background-color: #191c1d;
-    color: #eee;
+    color: white;
     border-color:#191c1d ;
   }
- 
+  .dark .card__item:hover{
+    background-color: black;
+  }
+  .dark .header__search{
+    background-color:black;
+  }
+  .dark .header__search i{
+    background-color: black;
+    border: 1px solid #2c3038;
+  }
+  .dark .header__search:hover i{
+    color: #eee;
+    border-color: #5a5a5a;
+  }
+  
+
   
 
 /* STARTUP  */
@@ -213,6 +249,9 @@ header .header__button:hover{
     font-weight: 400;
     margin: 15px 0;
 }
+.dark .startup .startup__title p{
+    color: #b7b7b7;
+}
 
 .start__item{
     background-color: #f7f9fc;
@@ -235,13 +274,22 @@ header .header__button:hover{
     line-height: 35px;
     color: #2c3038;
     margin: 15px 0;
-    color: #2c3038;
 }
 .startup__content  .start__item p{
     color: #5a5a5a;
     font-size: 16px;
     line-height: 24.5px;
 }
+.dark .startup__content .start__item h3{
+    color: white;
+}
+.dark .startup__content .start__item p{
+    color: #b7b7b7;
+}
+.dark .startup .startup__title .dark__color{
+    color: white;   
+  }
+   
 
 /* OURRSELVES  */
 .ourselves{
@@ -273,7 +321,7 @@ header .header__button:hover{
     font-weight: 700;
     line-height: 52px;
 }
-/* FEATURED */
+/* PROJECTS */  
 .Projects span{
     color: #dc4f72;
     line-height: 20px;
@@ -284,7 +332,9 @@ header .header__button:hover{
     font-size: 46px;
     line-height: 1;
     font-weight: 700;
-
+}
+.dark .Projects .Projects__title h3 {
+    color: white;
 }
 .Projects .Projects__title p{
 
@@ -292,12 +342,11 @@ header .header__button:hover{
     font-size: 16px;
     line-height: 24.5px;
     margin-bottom: 26px;
+}
+.dark .Projects .Projects__title p{
+    color: #b7b7b7;
+}
 
-}
-.Projects__list{
-    width: 85%;
-    margin: 0 auto;
-}
 .Projects .Projects__title{
     width: 65%;
     margin: 0 auto;
@@ -309,12 +358,20 @@ header .header__button:hover{
     font-weight: 700;
     color: #2c3038;
     margin-bottom: 16px;
+    margin-top: 10px;
+    
+}
+.dark .Projects__content h4{
+    color: white;
 }
 .Projects__content p{
     color: #5a5a5a;
     font-size: 16px;
     line-height: 24.5px;
     margin-bottom: 16px;
+}
+.dark .Projects__content p{
+    color: #b7b7b7;
 }
 .Projects__content button{
     padding: 0 30px;
@@ -332,7 +389,15 @@ header .header__button:hover{
     padding: 15px 90px;
     border: none;
     border-bottom: 3px solid rgb(193, 193, 193);
-
+}
+#pills-tabContent{
+    width: 80%;
+    margin: 0 auto;
+    
+}
+.dark .Projects__list .Projects__item {
+    background-color: black;
+    color: #eee;
 }
 .Projects__list .Projects__item.active{
     color: #dc4f72;
@@ -347,6 +412,46 @@ header .header__button:hover{
 .Projects__img img:hover{
     transform: translateY(-10px);
 }
+.Projects .Project__button{
+   color: #dc4f72;
+   border: 1px solid #dc4f72;
+   border-radius: 5px;
+   background-color: white;
+   transition: all .5s;
+}
+.Projects .Project__button:hover{
+    background-color: #dc4f72;
+    color: white;
+}
+.dark  .Project__button {
+    background-color: black;
+}
+.card-header .btn.text-left.collapsed{
+ color: black;
+
+}
+.card-header .btn{
+color: #dc4f72;
+border: none;
+font-size: 18px;
+
+}
+.card-header{
+    border-bottom:  1px solid #dc4f72;;
+}
+#accordionExample{
+    display: none;
+}
+.dark #accordionExample .card{
+    background-color: black;
+    border-color: rgb(193, 193, 193);
+}
+.dark .card-header .btn.text-left.collapsed{
+    color:#eee;
+   
+   }
+
+ 
 
 
 /* READY  */
@@ -360,13 +465,18 @@ header .header__button:hover{
     line-height: 1;
     font-weight: 700;
 }
+.dark .ready h3{
+    color: white;
+}
 .ready p{
     font-size: 16px;
     color: #5a5a5a;
     line-height: 22.5px;
     font-weight: 400;
     margin: 20px 0 40px 0;
-
+}
+.dark .ready p{
+    color: #b7b7b7;
 }
 .ready button{
     font-size: 14px;
@@ -374,27 +484,58 @@ header .header__button:hover{
     line-height: 52px;
     padding: 0 30px;
 }
+.ready .ready__button1{
+    color: #dc4f72;
+   border: 1px solid #dc4f72;
+   border-radius: 5px;
+   background-color: white;
+   transition: all .5s; 
+}
+.ready .ready__button1:hover{
+    background-color: #dc4f72;
+    color: white;
+}
+.dark  .ready__button1{
+    background-color: black;
+}
+.ready .ready__button2{
+    background-color: #dc4f72;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    border: 1px solid #dc4f72;
+    transition: all .5s;
+}
+.ready .ready__button2:hover{
+    background-color: #cf2e2e;
+}
 
 
 @media screen and ( max-width:1200px){
+    header .container{
+        max-width: 1120px;
+    }
     .startup .startup__title {
-        width: 65%;
+        width: 90%;
         margin: 0 auto;
     }
-
     .ourselves__content{
         width: 60%;
         
     }
+    .ready{
+        width: 70%;
+        margin: 0 auto;
+    }
+    
 }
 
-
-
 @media screen and ( max-width:992px){
+    
     #switchButton{
         position: absolute;
         right: 65px;
-        top : 15px ;
+        top : 20px ;
     }
     #portNavbar .nav-item .nav-link,.dropdown-menu {
         text-align: center;
@@ -404,29 +545,97 @@ header .header__button:hover{
         display: block;
         margin: 0 auto;
     }
-    .startup .startup__title {
-        width: 75%;
-        
-    
+    #portNavbar .nav-item .nav-link::after{
+        display: none;
     }
-    
 
 
-    
-    
+
+    .startup .startup__title h2{
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .ourselves__content{
+        width: 60%;
+        
+    }
+    .ourselves .container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #pills-tabContent{
+        width: 90%;
+        margin: 0 auto;
+        
+    }
+    .Projects .Projects__title{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .ready{
+        width: 90%;
+        margin: 0 auto;
+    }
+
 }
+
+
 
 @media screen and ( max-width:768px){
 
 .startup .startup__title{
     width: 100%;
 }
- .ourselves .ourselves__button{
+ 
+
+.startup .container{
+    width: 90%;
+    margin: 0 auto;
+    
+}
+.ourselves .ourselves__button{
     margin-bottom: 40px;
 }
-
-
+#accordionExample{
+    display: block;
 }
+.Projects__list{
+    display: none;
+}
+.Projects .Projects__title{
+    width: 90%;
+    margin: 0 auto;
+}
+.ready h3{
+    font-size: 40px;
+    line-height: 50px;
+}
+.ready{
+    width: 90%;
+    margin: 0 auto;
+}
+}
+
+@media screen and ( max-width:667px){
+    .startup .startup__title h2{
+        font-size: 32px;
+        line-height: 42px;
+    }
+}
+
+@media screen and (max-width :576px){
+    .startup .container{
+        width: 100%;
+        margin: 0 auto;
+        
+    }
+    
+}
+
+
+
+
+
 
 
 
