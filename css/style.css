@@ -111,7 +111,7 @@ margin-top: 5px;
 }
 
 .dark .heading__section p{
-color: var(--text-color);
+color: #b7b7b7;
 }
 
 
@@ -383,7 +383,7 @@ header .header__dark{
 
 .contentCarousel {
   background: linear-gradient(to right, #fff, rgba(255, 255, 255, 0.92)),
-      url(img/IMgmaster01.jpg);
+      url(../img/IMgmaster01.jpg);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -398,7 +398,7 @@ header .header__dark{
 }
 .dark .contentCarousel{
 background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
- url(img/IMgmaster01.jpg);
+ url(../img/IMgmaster01.jpg);
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -690,22 +690,7 @@ top: 80px;
 transition: all 0.25s ease-in-out;
 }
 
-/* .questions .questions__right .flipIn,
-.questions .questions__right h1,
-.questions .questions__right ul li {
--webkit-animation: flipdown 0.5s ease both;
-animation: flipdown 0.5s ease both;
-} */
 
-/* .questions .questions__right .no-select,
-.questions .questions__right h2 {
--webkit-tap-highlight-color: rgba(0, 0, 0, 0);
--webkit-touch-callout: none;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-} */
 
 
 .questions h3{
@@ -998,6 +983,26 @@ font-size: 18px;
 /* CLIENTS  */
 
 
+.clients__content {
+
+    background: linear-gradient(to right, white, rgba(255, 255, 255, 0.77)),
+        url(../img/IMgmaster12.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+.dark .clients__content {
+  background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.77)),
+  url(../img/IMgmaster12.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+
+
 .clients .clients__content h3{
 color: var(--title-color);
 font-size: 46px;
@@ -1081,7 +1086,7 @@ color: #b7b7b7;
 }
 
 .dark .clients .name p{
-color: var(--text-color);
+color: #b7b7b7;
 }
 
 
@@ -1620,16 +1625,22 @@ justify-content: space-between;
 }
 
 .footer .subscribe input[type="email"] {
-background: var(--light-bg-color);
+background: #F7F9FC;
 border: none;
 padding: 12px 20px;
 font-size: 16px;
 outline: none;
 width: 78%;
-color: var(--title-color);
+color: #2C3038;
 font-weight: 600;
 border-radius: var(--card-curve);
 }
+
+.dark .footer .subscribe input[type="email"] {
+  background: #191c1d;
+  color: #eee;
+
+  }
 
 .footer .subscribe button {
 text-align: center;
