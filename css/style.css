@@ -415,7 +415,7 @@ background: linear-gradient(to right, #131617, rgba(255, 255, 255, 0.92)),
 
 
 .myCarousel {
-margin-top: 90px;
+margin-top: 80px;
 }
 
 
@@ -1082,7 +1082,7 @@ font-weight: 400;
 
 .clients .name p {
 font-size: 13px;
-color: #b7b7b7;
+color: #5a5a5a;
 }
 
 .dark .clients .name p{
