@@ -235,6 +235,9 @@ header .navbar-brand {
 #portNavbar .active .nav-link {
   color: var(--primary);
 }
+ .dark #portNavbar .active .nav-link {
+  color: var(--primary);
+}
 
 #portNavbar .nav-item .nav-link i {
   font-size: 10px;
@@ -249,20 +252,25 @@ header .navbar-brand {
   transition: all .5s;
   display: block;
 }
-
-
-
+.dropdown-item::after{
+  content: "";
+  width:0;
+  height: 2px;
+  background-color: var(--primary);
+  transition: all .5s;
+  display: block;
+}
+.dropdown-item:hover:after{
+  width: 25px;
+}
 #portNavbar .nav-item .nav-link:hover::after{
 width: 40%;
-
 }
-
 header .header__search {
   border: none;
   background-color: var(--bg-color);
   margin-top: 15px;
 }
-
 header .header__search i {
   color: var(--text-color);
   width: 40px;
@@ -275,12 +283,9 @@ header .header__search i {
   margin-right: 15px;
   transition: all .5s;
 }
-
-
 header .header__search:hover i{
   color: black;
 }
-
 header .header__button {
   font-size: 14px;
   font-weight: 700;
@@ -303,6 +308,9 @@ header .header__dark{
   border: none;
   margin-left:  5px;
 }
+.dropdown-menu{
+  padding: 0;
+}
 
 
 
@@ -311,13 +319,11 @@ header .header__dark{
 }
 #switchButton {
   background-color: var(--bg-color);
-  
 }
 #switchButton .fa-sun {
   display: none;
   position: relative;
   font-size: 25px;
-
 }
 #switchButton .fa-moon {
   display: block;
@@ -363,6 +369,10 @@ header .header__dark{
 .dark .header__search:hover i{
   color:  var(--border-color);
   border-color: var(--text-color);
+}
+.dark .dropdown-item{
+  background-color: #131617;
+  color: #fff;
 }
 
 
@@ -619,16 +629,11 @@ transition: 0.3s ease;
 
 /* END ABOUT  */
 
- 
-
-
-
 /* OURRSELVES  */
 .ourselves{
-  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(https://wp.w3layouts.com/masterwork/wp-content/themes/masterwork/assets/images/bg.jpg);
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.33)), url(../img/bg\ oliver.jpg);
   background-size: cover;
   background-attachment: fixed;
-  
 }
 .ourselves__content{
   width: 50%;
@@ -685,14 +690,14 @@ top: 80px;
 transition: all 0.25s ease-in-out;
 }
 
-.questions .questions__right .flipIn,
+/* .questions .questions__right .flipIn,
 .questions .questions__right h1,
 .questions .questions__right ul li {
 -webkit-animation: flipdown 0.5s ease both;
 animation: flipdown 0.5s ease both;
-}
+} */
 
-.questions .questions__right .no-select,
+/* .questions .questions__right .no-select,
 .questions .questions__right h2 {
 -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 -webkit-touch-callout: none;
@@ -700,7 +705,7 @@ animation: flipdown 0.5s ease both;
 -moz-user-select: none;
 -ms-user-select: none;
 user-select: none;
-}
+} */
 
 
 .questions h3{
